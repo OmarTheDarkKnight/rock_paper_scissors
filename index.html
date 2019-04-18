@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <header class="row">
+      <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div class="container-fluid">
+      <!-- score-board -->
+      <div class="row">
+        <div class="score-board col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5">
+          <div id="user-strip" class="col-1 strips">
+            You
+          </div>
+          <div id="bot-strip" class="col-1 strips">
+            Robot
+          </div>
+          <span id="user-score">0</span> : <span id="robot-score">0</span>
+        </div>
+      </div>
+      <!--score-board-end-->
+
+      <!--result-paragraph-->
+      <div class="row">
+        <div class="result">
+          <p>You win!</p>
+        </div>
+      </div>
+      <!--result-paragraph-end-->
+
+      <!--rock-paper-scissors-icon-->
+          <div class="choices">
+            <div id="rock" class="choice">
+              <img src="images/rock.png">
+            </div>
+            <div id="paper" class="choice">
+              <img src="images/paper.png">
+            </div>
+            <div id="scissors" class="choice">
+              <img src="images/scissors.png">
+            </div>
+          </div>
+      <!--rock-paper-scissors-icon-end-->
+
+      <div class="row make-move">
+        <p>Make your move!</p>
+      </div>
+    </div>
+
+  </body>
+</html>
