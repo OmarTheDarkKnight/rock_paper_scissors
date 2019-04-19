@@ -2,7 +2,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 }
 
 body {
@@ -15,7 +15,8 @@ body {
 header {
 	background-color: white;
 	font-weight: bold;
-	padding: 20px;
+	padding-top: 5px;
+	padding-bottom: 15px;
 }
 
 header h1 {
@@ -56,7 +57,7 @@ header h1 {
 }
 
 .choices {
-	margin: 50px 0;
+	margin: 30px 0;
 }
 
 .choice {
@@ -69,10 +70,23 @@ header h1 {
 
 .choice:hover {
 	cursor: pointer;
-	background-color: grey;
-	transition: all 0.3s ease;
 }
 
 .make-move {
-	font-size: 30px;
+	font-size: 20px;
+}
+
+.green-glow {
+	background-color: #006600;
+	box-shadow: 0 0 25px #006600;
+}
+
+.red-glow {
+	background-color: #990000;
+	box-shadow: 0 0 10px #990000;
+}
+
+.blue-glow {
+	background-color: #00004d;
+	box-shadow: 0 0 10px #00004d;
 }
