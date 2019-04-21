@@ -5,17 +5,21 @@ const userScore_span = document.getElementById("user-score");
 const botScore_span = document.getElementById("bot-score");
 const result = document.querySelector(".result > p");
 
-const rock_choice = document.getElementById("rock");
-const paper_choice = document.getElementById("paper");
-const scissors_choice = document.getElementById("scissors");
+const rock_choice = document.getElementById("user-rock");
+const paper_choice = document.getElementById("user-paper");
+const scissors_choice = document.getElementById("user-scissors");
 
 function win(userChoice, botChoice) {
 	userScore++;
 	userScore_span.innerHTML = userScore;
 	botScore_span.innerHTML = botScore;
 	result.innerHTML = `${userChoice} beats ${botChoice}. You win!`;
-	document.getElementById(userChoice).classList.add('green-glow');
-	setTimeout(() => document.getElementById(userChoice).classList.remove("green-glow"), 300);
+	document.getElementById("user-" + userChoice).classList.add('green-glow');
+	document.getElementById("bot-" + botChoice).classList.add('red-glow');
+	setTimeout(() => {
+		document.getElementById("user-" + userChoice).classList.remove("green-glow");
+		document.getElementById("bot-" + botChoice).classList.remove('red-glow');
+	}, 300);
 }
 
 function lose(userChoice, botChoice) {
@@ -23,16 +27,24 @@ function lose(userChoice, botChoice) {
 	userScore_span.innerHTML = userScore;
 	botScore_span.innerHTML = botScore;
 	result.innerHTML = `${botChoice} beats ${userChoice}. You lost!`;
-	document.getElementById(userChoice).classList.add('red-glow');
-	setTimeout(() => document.getElementById(userChoice).classList.remove("red-glow"), 300);
+	document.getElementById("user-" + userChoice).classList.add('red-glow');
+	document.getElementById("bot-" + botChoice).classList.add('green-glow');
+	setTimeout(() => {
+		document.getElementById("user-" + userChoice).classList.remove("red-glow");
+		document.getElementById("bot-" + botChoice).classList.remove('green-glow');
+	}, 300);
 }
 
 function draw(userChoice, botChoice){
 	userScore_span.innerHTML = userScore;
 	botScore_span.innerHTML = botScore;
 	result.innerHTML = `${botChoice} equals ${userChoice}. It's a draw!`;
-	document.getElementById(userChoice).classList.add('blue-glow');
-	setTimeout(() => document.getElementById(userChoice).classList.remove("blue-glow"), 300);
+	document.getElementById("user-" + userChoice).classList.add('blue-glow');
+	document.getElementById("bot-" + botChoice).classList.add('blue-glow');
+	setTimeout(() => {
+		document.getElementById("user-" + userChoice).classList.remove("blue-glow");
+		document.getElementById("bot-" + botChoice).classList.remove('blue-glow');
+	}, 300);
 }
 
 function botChoiceGenerator() {
