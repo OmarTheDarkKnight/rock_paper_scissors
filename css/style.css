@@ -61,6 +61,12 @@ header h1 {
 	display: inline-block;
 }
 
+.choices p {
+	display: inline-block;
+	font-size: 20px;
+	color: yellow;
+}
+
 .choice {
 	display: inline-block;
 	padding: 30px;
