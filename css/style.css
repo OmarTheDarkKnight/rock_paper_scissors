@@ -13,7 +13,6 @@ body {
 }
 
 .score-board {
-	margin-top: 20px;
 	margin-bottom: 20px;
 	border: 3px solid white;
 	border-radius: 5px;
@@ -46,7 +45,7 @@ body {
 }
 
 .choices {
-	margin: 30px 0;
+	margin: 10px 0;
 	display: inline-block;
 }
 
@@ -83,7 +82,7 @@ body {
 }
 
 #bat-logo {
-	margin: 20px 0;
+	margin-bottom: 10px;
 	animation-name: colorChange;
 	animation-duration: 10s;
 	animation-fill-mode: both;
