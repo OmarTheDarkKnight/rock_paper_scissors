@@ -83,7 +83,7 @@ body {
 }
 
 #bat-logo {
-	margin: 10px 0;
+	margin: 20px 0;
 	animation-name: colorChange;
 	animation-duration: 10s;
 	animation-fill-mode: both;
@@ -118,6 +118,10 @@ body {
 	100% {
 		background-color: yellow;
 	}
+}
+
+footer {
+	margin: 50px 0;
 }
 
 .green-glow {
