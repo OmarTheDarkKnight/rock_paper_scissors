@@ -12,17 +12,6 @@ body {
 	text-align: center;
 }
 
-header {
-	background-color: white;
-	font-weight: bold;
-	padding-top: 5px;
-	padding-bottom: 15px;
-}
-
-header h1 {
-	color: black;
-}
-
 .score-board {
 	margin-top: 20px;
 	margin-bottom: 20px;
