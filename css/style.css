@@ -2,7 +2,6 @@
 *{
 	margin: 0;
 	padding: 0;
-	/*box-sizing: border-box;*/
 }
 
 body {
@@ -10,6 +9,28 @@ body {
 	font-family: Ubuntu, sans-serif;
 	color:white;
 	text-align: center;
+}
+
+.navbar {
+	background-color: white;
+	color: black;
+	border-radius: 0;
+}
+
+.navbar h3 {
+	font-size: 35px;
+}
+
+.nav li a {
+	font-size: 30px;
+    position: relative;
+    display: block;
+    padding: 0px 15px; */
+}
+
+#play-with-batman {
+	border-radius: 50%;
+	border: 2px solid black;
 }
 
 .score-board {
