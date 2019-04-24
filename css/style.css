@@ -70,6 +70,11 @@ body {
 	display: inline-block;
 }
 
+.choices img {
+	max-height: 40px;
+	max-width: 40px;
+}
+
 .choices p {
 	display: inline-block;
 	font-size: 20px;
@@ -80,7 +85,7 @@ body {
 	display: inline-block;
 	padding: 30px;
 	margin : 0 15px;
-	border: 5px solid white;
+	border: 3px solid white;
 	border-radius: 50%;
 }
 
@@ -100,6 +105,10 @@ body {
 
 .make-move {
 	font-size: 20px;
+}
+
+.make-move ul li {
+	font-size: 15px;
 }
 
 #bat-logo {
