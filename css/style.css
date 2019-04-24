@@ -103,6 +103,11 @@ body {
 	cursor: pointer;
 }
 
+.share-box {
+	font-size: 20px;
+	margin: 20px 0;
+}
+
 .make-move {
 	font-size: 20px;
 }
