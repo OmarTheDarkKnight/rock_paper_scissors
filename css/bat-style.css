@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #23222b;
+	font-family: Ubuntu, sans-serif;
+	color:white;
+	text-align: center;
+}
+
+.navbar {
+	background-color: white;
+	color: black;
+	border-radius: 0;
+}
+
+.navbar h3 {
+	margin: 10px 0;
+	font-size: 35px;
+}
+
+.nav li a {
+	font-size: 30px;
+    padding: 20px 15px;
+}
+
+.score-board {
+	background-color: #23222;
+	color: #a00101;
+	margin-bottom: 20px;
+	border: 3px solid #a00101;
+	border-radius: 5px;
+	padding: 15px 20px;
+	font-size: 50px;
+	position: relative;
+	box-shadow: 0 0 10px #bc1414;
+}
+
+#user-strip {
+	padding: 14px 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	background-color: #bc1414;
+	position: absolute;
+	top: 26px;
+	left: -30px;
+	box-shadow: 0 0 10px #bc1414;
+}
+
+#bat-strip {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 26px;
+	right: -30px;
+	box-shadow: 0 0 10px #bc1414;
+}
+
+.result {
+	font-size: 40px;
+}
+
+.custom-table {
+	width: 50%;
+	margin-left: 25%;
+}
+
+.custom-table thead tr th {
+	text-align: center;
+	font-size: 17px;
+}
+
+#middle-logo {
+	width: 50%;
+	vertical-align: middle;
+}
+
+.choice {
+	margin: 5px 45px;
+	padding: 25px;
+	border: 3px solid white;
+	border-radius: 50%;
+}
+
+.user-choices {
+	float: left;
+}
+
+.bat-choices {
+	float: right;
+}
+
+.user-choices:hover {
+	cursor: pointer;
+	background-color: grey;
+}
+
+#bat-logo {
+	margin-bottom: 10px;
+	animation-name: colorChange;
+	animation-duration: 5s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+	0% {
+		background-color: #bc1414;
+	}
+	50% {
+		background-color: #23222b;
+	}
+	100% {
+		background-color: #bc1414;
+	}
+}
+
+footer {
+	margin: 50px 0;
+}
+
+.share-box {
+	font-size: 20px;
+	margin: 20px 0;
+}
+
+.make-move {
+	font-size: 20px;
+}
+
+.make-move ul li {
+	font-size: 15px;
+}
+
+.green-glow {
+	background-color: #006600;
+	box-shadow: 0 0 25px #006600;
+}
