@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "icon" href ="images/bat-logo.jpg" type = "image/x-icon">
+	<meta charset="utf-8" name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bat-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<title>Play against batman</title>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <h3>Rock Paper Scissors</h3>
+        </div>
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="index.html">Go back</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+    	<!-- score-board -->
+      <div class="row">
+        <div class="score-board col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5">
+          <div id="user-strip">
+            You
+          </div>
+          <img id="bat-strip" src="images/bat-logo-red.jpg" height="50px">
+          <span id="user-score">0</span> : <span id="bat-score">0</span>
+        </div>
+      </div>
+      <!--score-board-end-->
+
+      <!--result-paragraph-->
+      <div class="row">
+        <div class="result">
+          <p>Let's play!</p>
+        </div>
+      </div>
+      <!--result-paragraph-end-->
+
+      <!--rock-paper-scissors-icon-->
+      <table class="custom-table">
+      	<thead>
+      		<tr>
+      			<th>You</th>
+	      		<th></th>
+	      		<th>Batman</th>
+      		</tr>
+      	</thead>
+      	<tbody>
+      		<tr>
+      			<td>
+      				<div id="user-rock" class="user-choices choice">
+	                	<img src="images/rock.png">
+	              	</div>
+      			</td>
+      			<td rowspan="3" id="middle-logo">
+      				<img id="bat-logo" src="images/breathing-bat-play-bat.png" width="100%">
+      			</td>
+      			<td>
+      				<div id="bat-rock" class="bat-choices choice">
+	                	<img src="images/rock.png">
+	              	</div>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<div id="user-paper" class="user-choices choice">
+	                	<img src="images/paper.png">
+	              	</div>
+      			</td>
+      			
+      			<td>
+      				<div id="bat-paper" class="bat-choices choice">
+	                	<img src="images/paper.png">
+	              	</div>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<div id="user-scissors" class="user-choices choice">
+	                	<img src="images/scissors.png">
+	              	</div>
+      			</td>
+      			<td>
+      				<div id="bat-scissors" class="bat-choices choice">
+	                	<img src="images/scissors.png">
+	              	</div>
+      			</td>
+      		</tr>
+      	</tbody>
+      </table>
+      <!--rock-paper-scissors-icon-end-->
+
+      <!--Share-it-start-->
+      <div class="row share-box">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          Share with your friends<span>    </span>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/OmarTheDarkKnight/rock_paper_scissors&t=facebook.com/omarhaider.jayed"
+            onclick="javascript:window.open(this.href, '').focus();return false;"><img src="images/facebook.png"></a>
+
+          <a href="https://twitter.com/share?url=https://github.com/OmarTheDarkKnight/rock_paper_scissors&via=Jayed258&text=Hey guys, check this out->"
+            onclick="javascript:window.open(this.href, '').focus();return false;"><img src="images/twitter.png"></a>
+        </div>
+      </div>
+      <!--Share-it-end-->
+
+      <div class="row make-move">
+        <p>Rules of the game:</p>
+        <ul>
+          <li>Rock crushes Scissors</li>
+          <li>Scissors cuts Paper</li>
+          <li>Paper covers Scissors</li>
+        </ul>
+        <p>Now make your move!</p>
+      </div>
+    </div>
+</body>
+
+<footer>
+    <div>
+      Made By Batman
+      <a href="https://www.facebook.com/omarhaider.jayed"><img src="images/facebook.png"></a>
+      <a href="https://github.com/OmarTheDarkKnight"><img src="images/github.png"></a>
+      <a href="https://www.linkedin.com/in/omar-jayed/"><img src="images/linkedin.png"></a>
+    </div>
+</footer>
+</html>
