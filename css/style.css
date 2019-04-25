@@ -23,9 +23,7 @@ body {
 
 .nav li a {
 	font-size: 30px;
-    position: relative;
-    display: block;
-    padding: 0px 15px; */
+    padding: 0px 15px;
 }
 
 #play-with-batman {
@@ -128,25 +126,13 @@ body {
 	0% {
 		background-color: yellow;
 	}
-	12.5% {
-		background-color: black;
-	}
 	25%{
-		background-color: red;
-	}
-	37.5%{
 		background-color: black;
 	}
 	50% {
-		background-color: yellow;
-	}
-	62.5%{
-		background-color: black;
-	}
-	75%{
 		background-color: red;
 	}
-	87.5%{
+	75%{
 		background-color: black;
 	}
 	100% {
