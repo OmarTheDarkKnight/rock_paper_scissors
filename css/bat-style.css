@@ -145,3 +145,13 @@ footer {
 	background-color: #006600;
 	box-shadow: 0 0 25px #006600;
 }
+
+.red-glow {
+	background-color: #990000;
+	box-shadow: 0 0 10px #990000;
+}
+
+.blue-glow {
+	background-color: #00004d;
+	box-shadow: 0 0 10px #00004d;
+}
